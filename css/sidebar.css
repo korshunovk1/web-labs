@@ -1,0 +1,14 @@
+.sidebar {
+    width: 720px;
+    height: 120px;
+    float: left;
+    background-color: var(--color-sidebar-bg);
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+
+.sidebar p {
+    font-size: 14px;
+    color: var(--color-primary);
+    margin-top: 5px;
+}

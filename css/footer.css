@@ -1,0 +1,11 @@
+.footer {
+    width: 720px;
+    height: 120px;
+    float: right;
+    background-color: #102a43;
+    color: #cbd5e1;
+    text-align: center;
+    padding-top: 45px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
