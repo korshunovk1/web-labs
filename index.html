@@ -6,20 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфоліо автора — Варіант 13</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
     <div class="container">
         <!-- Верхній рядок: Меню (ліворуч) та Заголовок (праворуч) -->
-        <div class="top_row">
+        <div class="top_row flex flex_wrap">
             <nav class="menu">
-                <ul>
+                <!-- Чекбокс та кнопка для гамбургер-меню на мобільних -->
+                <input id="menu-toggle" type="checkbox" />
+                <label class="menu_btn flex flex_align_center" for="menu-toggle">
+                    <span></span>
+                </label>
+                <ul class="menu_list flex flex_align_center">
                     <li><a href="#about" class="text_border active">Про автора</a></li>
                     <li><a href="#works" class="text_border">Основні роботи</a></li>
                     <li><a href="#contacts" class="text_border">Контакти</a></li>
                     <li><a href="#links" class="text_border">Корисні посилання</a></li>
                 </ul>
             </nav>
-            <header class="header">
+            <header class="header flex flex_align_center flex_justify_center">
                 <h1 class="header_h1 text_border">Портфоліо веб-розробника та дослідника</h1>
             </header>
         </div>
@@ -35,20 +41,20 @@
 
             <section id="works" class="content_box_individual">
                 <h2 class="h2 text_border">Основні роботи</h2>
-                <div class="content_box_individual_img_box">
-                    <div class="content_box_individual_card">
+                <div class="content_box_individual_img_box gallery-grid">
+                    <div class="content_box_individual_card gallery_card">
                         <div class="content_box_individual_img project_1"></div>
                         <div class="content_box_individual_img_text">
                             <p class="content_box_individual_img_p"><strong>Аналітичний веб-модуль</strong><br>Аналіз часових рядів.</p>
                         </div>
                     </div>
-                    <div class="content_box_individual_card">
+                    <div class="content_box_individual_card gallery_card">
                         <div class="content_box_individual_img project_2"></div>
                         <div class="content_box_individual_img_text">
                             <p class="content_box_individual_img_p"><strong>База даних</strong><br>Реляційна структура СКБД.</p>
                         </div>
                     </div>
-                    <div class="content_box_individual_card">
+                    <div class="content_box_individual_card gallery_card">
                         <div class="content_box_individual_img project_3"></div>
                         <div class="content_box_individual_img_text">
                             <p class="content_box_individual_img_p"><strong>ГИС модуль</strong><br>Обробка просторових даних.</p>
@@ -76,12 +82,12 @@
         </main>
 
         <!-- Нижній рядок: Додаткова секція (ліворуч) та Нижній колонтитул (праворуч) -->
-        <div class="bottom_row">
-            <aside class="sidebar">
+        <div class="bottom_row flex flex_wrap">
+            <aside class="sidebar flex flex_column flex_justify_center">
                 <h2 class="h2_sm text_border">Додаткова секція (Статус)</h2>
                 <p>Відкритий до співпраці. Стек: HTML5, CSS3, JS, Python, SQL. Київ, Україна.</p>
             </aside>
-            <footer class="footer">
+            <footer class="footer flex flex_align_center flex_justify_center">
                 <p>&copy; 2026 Портфоліо автора. Всі права захищено.</p>
             </footer>
         </div>

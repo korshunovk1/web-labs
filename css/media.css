@@ -1,0 +1,61 @@
+/* --- ПЛАНШЕТ (Tablet: 768px - 1023px) --- */
+@media (max-width: 1023px) {
+    .header_h1 { font-size: 20px; }
+    .menu_list li a { font-size: 14px; padding-right: 10px; }
+}
+
+/* --- МОБІЛЬНІ ПРИСТРОЇ (Mobile: до 767px) --- */
+@media (max-width: 767px) {
+    /* Перебудова сітки у 1 колонку */
+    .menu, .header, .sidebar, .footer {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+    
+    .menu {
+        padding-top: 15px;
+        padding-left: 15px;
+    }
+
+    /* Гамбургер-меню */
+    .menu_list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding: 15px 0;
+    }
+    
+    .menu_list li {
+        display: block;
+        padding: 8px 0;
+    }
+    
+    .menu_btn {
+        display: flex;
+        height: 40px;
+        width: 100%;
+        justify-content: flex-end;
+        cursor: pointer;
+        padding-right: 20px;
+        position: relative;
+    }
+    
+    .menu_btn span, .menu_btn span::before, .menu_btn span::after {
+        display: block; width: 30px; height: 3px; background: #102a43; position: absolute; transition: 0.3s;
+    }
+    .menu_btn span { top: 20px; }
+    .menu_btn span::before { content: ""; top: -8px; }
+    .menu_btn span::after { content: ""; top: 8px; }
+
+    /* Логіка роботи чекбокса меню */
+    #menu-toggle:checked ~ .menu_list { display: flex; }
+    #menu-toggle:checked ~ .menu_btn span { background: transparent; }
+    #menu-toggle:checked ~ .menu_btn span::before { top: 0; transform: rotate(45deg); }
+    #menu-toggle:checked ~ .menu_btn span::after { top: 0; transform: rotate(-45deg); }
+    
+    :root {
+        --padding-text: 20px;
+    }
+    .header { min-height: 80px; }
+    .sidebar { border-left: none; border-bottom: 2px solid #cbd5e1; }
+}

@@ -1,7 +1,6 @@
 .sidebar {
-    width: 720px;
-    height: 120px;
-    float: left;
+    flex: 1 1 50%;
+    min-height: 120px;
     background-color: var(--color-sidebar-bg);
     padding: 20px 30px;
     box-sizing: border-box;

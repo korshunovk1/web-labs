@@ -8,12 +8,11 @@
 
 body {
     background-color: #cbd5e1;
-    margin: 0 auto;
-    max-width: var(--width);
+    margin: 0;
 }
 
 .container {
-    width: var(--width);
+    width: 100%;
     background-color: var(--color-bg-main);
     color: var(--color-primary);
     font-family: var(--font-family-text);
@@ -21,9 +20,15 @@ body {
     overflow: hidden;
 }
 
+/* Гнучкі класи компонування (Flexbox) */
+.flex { display: flex; }
+.flex_column { flex-direction: column; }
+.flex_wrap { flex-wrap: wrap; }
+.flex_align_center { align-items: center; }
+.flex_justify_center { justify-content: center; }
+
 .top_row, .bottom_row {
     width: 100%;
-    clear: both;
 }
 
 .h2 {

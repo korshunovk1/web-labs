@@ -1,27 +1,31 @@
 .menu {
-    width: 720px;
-    height: 100px;
-    float: left;
+    flex: 1 1 50%;
+    min-height: 100px;
     background-color: #ffffff;
     padding-top: 38px;
     padding-left: 30px;
     border-bottom: 2px solid #cbd5e1;
+    position: relative;
 }
 
-.menu ul li {
+.menu_list li {
     display: inline-block;
     padding-right: 20px;
 }
 
-.menu ul li a {
+.menu_list li a {
     font-family: var(--font-family-text);
     font-size: var(--font-size-menu);
     font-weight: 600;
     color: var(--color-accent);
 }
 
-.menu ul li a.active,
-.menu ul li a:hover {
+.menu_list li a.active,
+.menu_list li a:hover {
     color: #0284c7;
     text-decoration: underline;
+}
+
+#menu-toggle, .menu_btn {
+    display: none;
 }

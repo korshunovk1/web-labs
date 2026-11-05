@@ -17,17 +17,19 @@
     border-bottom: 1px solid #f1f5f9;
 }
 
-.content_box_individual_img_box {
+/* Переведено на CSS Grid згідно з ЛР4 для адаптивності галереї */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
     margin-top: 15px;
     padding-left: var(--padding-text);
-    display: flex;
-    gap: 40px;
-    justify-content: center;
+    padding-right: var(--padding-text);
 }
 
 .content_box_individual_card {
     position: relative;
-    width: var(--img-size);
+    width: 100%;
     height: var(--img-size);
     border-radius: 8px;
     overflow: hidden;
